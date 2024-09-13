@@ -1,48 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
-header {
-    width: 100%;
+a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+p {
+    color: #a4a8ac;
+}
+
+body {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border-radius: 8px;
+    height: 100%; /* Ocupa 100% da altura da tela */
+    background-color: #f5f5f5;
 }
 
-h2 {
-    color: #000000; /* Cor do título */
-    font-size: 2rem;
+.container {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    width: 250px; /* Menu lateral fixo */
+    height: auto;
+}
+
+.container > h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.container .side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os itens do menu */
+}
+
+.container .side-nav .item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre ícone e texto */
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.container .side-nav .item a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.container .side-nav .item i {
+    font-size: 20px;
+    color: #295179;
+    transition: color 0.3s ease;
+}
+
+.container .side-nav .item.active {
+    background-color: floralwhite;
+}
+
+.container .side-nav .item.active a,
+.container .side-nav .item.active i {
+    color: #111;
+    font-weight: bold;
+}
+
+.container .side-nav .item:hover a,
+.container .side-nav .item:hover i {
+    color: #ff0000;
+}
+
+.container .side-nav .item:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column; /* Exibe as seções em colunas */
+    gap: 30px; /* Espaçamento entre seções */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .HQ {
-    display: flex;
-    flex-wrap: wrap; /* Para itens se ajustarem em telas menores */
-    justify-content: space-between;
-    padding: 10px;
-    border: solid 1px black;
-    font-size: 1rem;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste automático das colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.HQ h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 10px;
 }
 
 .HQ-item {
-    position: relative;
+    width: 150px; /* Largura fixa para parecer um livro */
+    height: 250px; /* Altura fixa para imitar a proporção de um livro */
+    background-color: #fff;
     margin: 10px;
-    border-radius: 10px;
-    padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-img {
-    max-width: 100%;
+.HQ-item img {
+    width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.HQ-item p {
+    margin-top: 10px;
+    text-align: center;
+    color: #111;
+}
+
+.HQ-item:hover {
+    transform: translateY(-10px); /* Leve elevação ao passar o mouse */
 }
