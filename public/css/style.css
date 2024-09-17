@@ -18,6 +18,8 @@ p {
     color: #a4a8ac;
 }
 
+span{color: #ff0000;}
+
 body {
     display: flex;
     height: 100%; /* Ocupa 100% da altura da tela */
@@ -35,7 +37,7 @@ body {
     height: auto;
 }
 
-.container > h2 {
+.container > h1 {
     font-size: 26px;
     font-weight: 500;
     color: #ffffff;
@@ -70,7 +72,20 @@ body {
 }
 
 .container .side-nav .item.active {
-    background-color: floralwhite;
+    background: #ccc;
+}
+
+.container .side-nav .item.active1 {
+    background: url(/public/logo\ deepol.png);
+}
+.container .side-nav .item.active2 {
+    background: url(/public/HomemA.png);
+}
+.container .side-nav .item.active3 {
+    background: url(/public/Batman.png);
+}
+.container .side-nav .item.active4 {
+    background: url(/public/aquacamen.png);
 }
 
 .container .side-nav .item.active a,
@@ -81,7 +96,7 @@ body {
 
 .container .side-nav .item:hover a,
 .container .side-nav .item:hover i {
-    color: #ff0000;
+    color: #ff000094;
 }
 
 .container .side-nav .item:hover {
@@ -112,7 +127,7 @@ body {
 
 .HQ-item {
     width: 150px; /* Largura fixa para parecer um livro */
-    height: 250px; /* Altura fixa para imitar a proporção de um livro */
+    height: 200px; /* Altura fixa para imitar a proporção de um livro */
     background-color: #fff;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -126,16 +141,16 @@ body {
 
 .HQ-item img {
     width: 100%;
-    height: auto;
+    height: 150px;
     border-radius: 8px;
 }
 
 .HQ-item p {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     color: #111;
 }
 
 .HQ-item:hover {
-    transform: translateY(-10px); /* Leve elevação ao passar o mouse */
+    transform: translateY(-15px); /* Leve elevação ao passar o mouse */
 }
