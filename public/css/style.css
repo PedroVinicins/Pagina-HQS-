@@ -23,7 +23,7 @@ span{color: #ff0000;}
 body {
     display: flex;
     height: 100%; /* Ocupa 100% da altura da tela */
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 .container {
@@ -61,31 +61,32 @@ body {
 }
 
 .container .side-nav .item a {
-    color: #ccc;
+    color: #ffffff;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .container .side-nav .item i {
     font-size: 20px;
-    color: #295179;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
 .container .side-nav .item.active {
-    background: #ccc;
+    background: #ffffff;
 }
 
 .container .side-nav .item.active1 {
-    background: url(/public/logo\ deepol.png);
+    background: url(/public/Hqs-img/logo\ deepol.png)
 }
 .container .side-nav .item.active2 {
-    background: url(/public/HomemA.png);
+    background: url(/public/Hqs-img/HomemA.png);
 }
 .container .side-nav .item.active3 {
-    background: url(/public/Batman.png);
+    background: url(/public/Hqs-img/Batman.png);
 }
 .container .side-nav .item.active4 {
-    background: url(/public/aquacamen.png);
+    background: url(/public/Hqs-img/aquacamen.png);
 }
 
 .container .side-nav .item.active a,
@@ -109,7 +110,7 @@ body {
     gap: 30px; /* Espaçamento entre seções */
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #9999;
 }
 
 .HQ {
